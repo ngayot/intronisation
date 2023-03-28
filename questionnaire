@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de code</title>
+
+    <style>
+        body {
+          background-image: url('logo.png');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+            background-color: #000000;
+            text-align: center;
+            color: #706868
+        }
+
+        form {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #00000044;
+            background-color: #00000042;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            font-size: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            background-color: #0015ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error-message {
+            font-size: 3em;
+            color: red;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="reponse.php" method="get" name="test">
+        <h1>Votre code :</h1>
+        <label for="code">Entrez votre code :</label>
+        <input type="text" id="code" name="code" required>
+        <input type="submit" value="Valider">
+    </form>
+
+</body>
+
+</html>
+
+
